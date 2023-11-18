@@ -20,11 +20,15 @@ function normalizePort(val) {
 }
 
 app.get("/", function (req, res) {
-    res.send("Hello World!");
+    res.send("Express Active Directory test");
 });
 
 app.get("/admin", function (req, res) {
     res.send("Admin section...");
+});
+
+app.get("/login", function (req, res) {
+    res.send("Login page...");
 });
 
 app.listen(port, function () {
